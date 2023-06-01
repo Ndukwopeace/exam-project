@@ -238,6 +238,7 @@ Rooms
   .btnlogo{ 
     display: inline-block;
     border: 1px solid #234B9A;
+    border-left: none;
     border-radius: 10px;
     padding: 15px;
     width: 15%;
@@ -253,6 +254,28 @@ Rooms
     background-size: 100% 100%;
     color: #06348C;
   }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 13;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
   
   .logosection {
     display: flex;
@@ -267,11 +290,11 @@ Rooms
     position: relative;
     display: inline-block;
   }
-  .logosection h1:after, .logosection .logotextcontact:after {
+  .logosection .logosection .logotextcontact:after {
     content: " ";
     width: 90%;
     height: 2px;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: block;
     margin-left: 1%;
   }
@@ -495,6 +518,25 @@ Facilities
     padding-left: 40px; 
     padding-top: 20px; 
 }
+.logosection h1::after{
+          content:" ";
+          width: 90%;
+          height: 2px;
+          background-color: yellow;
+          display: block;
+          margin-left: 1%;
+          transition: 2s;
+  
+      }
+.logosection h3::after{
+  content: " ";
+  width: 90%;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  margin-left: 1%;
+  margin-top: 10px;
+}
 
 
 .text1 ul li{
@@ -592,6 +634,17 @@ color:#fff;
 text-decoration: none;
 }
 
+/* =============
+register
+==================== */
+.register{
+  width: 100%;
+  /* height: 100px; */
+  /* border: 1px solid black; */
+  background-image: url(./images/Bliss_Hotel/coming\ soon.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 /*
 =======================
@@ -696,3 +749,15 @@ ul {
         margin-bottom: 30px;
     }
 } 
+
+.construction h1{
+  text-align: center;
+  font-size: 50px;
+  background-color: rgba(39, 100, 126, 0.1);
+  padding: 10% 0 10% 0;
+        
+}
+
+.signin{
+  margin-bottom: 50%;
+}
